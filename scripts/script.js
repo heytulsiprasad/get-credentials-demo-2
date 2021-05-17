@@ -48,18 +48,20 @@ const signupHandler = async () => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  console.log("Form/Login Clicked");
   loginHandler();
 });
 
 signupBtn.addEventListener("click", (e) => {
+  console.log("Signup Clicked");
   signupHandler();
 });
-
-console.log(firebase);
 
 const code = document.querySelector(".code");
 
 firebase.auth().onAuthStateChanged((user) => {
+  console.log("Auth State Changed");
+
   if (user) {
     code.innerHTML = `
       <pre>
