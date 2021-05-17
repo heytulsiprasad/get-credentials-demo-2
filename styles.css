@@ -15,8 +15,14 @@ body {
   flex-direction: column;
 }
 
-.done-btn {
+.login-btn {
   width: max-content;
   margin-top: 1rem;
   padding: 0.5rem;
+}
+
+.signup-btn {
+  width: max-content;
+  padding: 0.5rem;
+  margin-top: 1rem;
 }

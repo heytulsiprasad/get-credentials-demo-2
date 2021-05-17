@@ -27,9 +27,19 @@
         <label for="password">
           Password <input type="password" id="password" name="password" />
         </label>
-        <button class="done-btn" type="submit">Done</button>
+        <span>
+          <button class="login-btn" type="submit">Login</button>
+          <button class="signup-btn" type="button">Sign Up</button>
+        </span>
       </form>
     </div>
+
+    <div style="margin-top: 2rem">
+      <h2>I'm the Current User:</h2>
+      <button type="button" class="logout-btn">Logout</button>
+      <div class="code"></div>
+    </div>
+
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
@@ -37,6 +47,6 @@
 
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-    <script src="script.js" />
+    <script src="./scripts/script.js" />
   </body>
 </html>
