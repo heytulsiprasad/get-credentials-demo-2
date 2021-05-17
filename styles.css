@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 4rem;
+  font-family: "Montserrat";
+}
+
+.form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.done-btn {
+  width: max-content;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}

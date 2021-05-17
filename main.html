@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="U-XA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts by Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900|Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1>Hey, I'm App!</h1>
+    </div>
+
+    <div>
+      <form novalidate class="form">
+        <label for="email">
+          Email <input type="email" id="email" name="email" />
+        </label>
+        <label for="password">
+          Password <input type="password" id="password" name="password" />
+        </label>
+        <button class="done-btn" type="submit">Done</button>
+      </form>
+    </div>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="index.js" />
+  </body>
+</html>
